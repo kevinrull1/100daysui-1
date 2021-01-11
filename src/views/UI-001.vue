@@ -4,14 +4,18 @@
         <form class="login-form">
             <h1>Create a new account</h1>
             <div class="from-group">
-                <label for="name">Your name</label>
+                <label class="input-name" for="name">Your E-mail</label>
                 <input type="text" id="name">
             </div>
             <div class="from-group">
-                <label for="password">Password</label>
+                <label class="input-name"  for="name">Your Username</label>
+                <input type="text" id="name">
+            </div>
+            <div class="from-group">
+                <label  class="input-name" for="password">Password</label>
                 <input type="password" id="password">
             </div>
-            <button type="submit">Sign up</button>
+            <button class="sign-btn" type="submit">Sign up</button>
         </form>
     </div>
   </div>
@@ -34,5 +38,17 @@
     }
 }
 
+.sign-btn {
+ margin-top: 5px;
+}
+
+.input-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.login-card {
+    
+}
 
 </style>
