@@ -57,6 +57,13 @@
 </template>
 
 <style lang="css">
+
+.creditCardForm {
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
 #mastercard {
   height: 20%;
   width: 20%;
@@ -70,7 +77,7 @@
 .creditCardForm {
   max-width: 800px;
   background-color: #fff;
-  margin:auto;
+  margin: auto;
   overflow: hidden;
   padding: 25px;
   color: #4c4e56;
