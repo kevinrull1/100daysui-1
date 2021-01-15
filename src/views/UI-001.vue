@@ -1,54 +1,99 @@
 <template>
   <div class="flex-center">
     <div class="login-card">
-      <div class="new acc">Create a new account</div>
-      <div class="nav">
-        <input placeholder="E-mail" type="text" id="name">
-        <input placeholder="Username" type="text" id="name">
-        <input placeholder="password" type="password" id="password">
-      </div>
+      <form class="login-form">
+        <h1>Create a new account</h1>
 
+        <div class="form-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password">
+        </div>
+        <div class="terms">
+          <a href="#terms">
+            <small>Terms and conditions</small>
+          </a>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-    .login {
+  .login {
     &-card {
-        width: 360px;
-        background: white;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-        padding: 3rem;
+      width: 300px;
+      background: white;
+      box-shadow: 0 18px 30px rgba(0,0,0,0.06);
+      padding: 3rem;
+      border-radius: 8px;
+      text-align: left;
+      h1 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        font-size: 3em;
+        letter-spacing: -2px;
+      }
+      button {
+        padding: 20px;
+        background-color: #42b983;
+        border: none;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          background-color: #42b96a;
+        }
+      }
     }
-}
-.from-group {
-        display: flex;
-        flex-direction: column;
-     label {
-    display: block;
-    margin: 10px;
-    }
-}
-
-.sign-btn {
-    border-radius: 5px;
-    background: cornflowerblue;
-    margin-top: 5px;
-}
-
-.input-name {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.login-card {
-    justify-content: space-around;
-
-}
-.nav {
+  }
+  .form-group {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-}
+    margin-bottom: 2rem;
+    input {
+      border: none;
+      border-bottom: 1px solid #afafaf;
+      padding: 10px 5px;
+    }
+    label {
+      margin-bottom: 5px;
+      color: #afafaf;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    &:hover {
+      input {
+        border-bottom-color: #8d8d8d;
+      }
+      label {
+        color: #8d8d8d;
+      }
+    }
+  }
+  .form-group input:focus {
+    outline: none;
+    border-bottom-color: #42b983;
+    background-color: #f7f7f7;
+  }
+  .terms {
+    a {
+      color: darkgray;
+      text-decoration: none;
+      &:hover {
+        color: gray;
 
+      }
+    }
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 </style>
