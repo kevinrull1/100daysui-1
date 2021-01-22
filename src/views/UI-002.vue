@@ -86,6 +86,7 @@
 .creditCardForm label {
   width: 100%;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .creditCardForm .heading h1 {
@@ -147,6 +148,8 @@
   font-size: 24px;
   background-color: #2ec4a5;
   color: white;
+  border: 0;
+  padding: 0.2em;
 }
 
 .creditCardForm .payment select {
